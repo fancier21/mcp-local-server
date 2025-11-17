@@ -41,12 +41,6 @@ async def get_github_repos(username: str) -> str:
     return "\n\n".join(numbered_repos)
 
 
-@mcp.resource("greeting://{name}")
-def get_greeting(name: str) -> str:
-    """Get a personalized greeting"""
-    return f"Hello, {name}!"
-
-
 @mcp.resource("licenses://all")
 def get_info() -> str:
     """
@@ -60,6 +54,12 @@ def get_info() -> str:
             return file.read()
     except FileNotFoundError:
         return "Licenses not found."
+
+
+@mcp.prompt()
+def greet_user(name: str, style: str = "friendly") -> str:
+    """Generate a greeting prompt"""
+    return f"Write a {style} greeting for someone named {name}."
 
 
 def main():
