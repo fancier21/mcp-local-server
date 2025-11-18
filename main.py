@@ -3,7 +3,7 @@ from typing import Any
 import httpx
 from mcp.server.fastmcp import FastMCP
 
-mcp = FastMCP("local-mcp")
+mcp = FastMCP("mcp-local-server")
 
 
 async def make_nws_request(url: str) -> Any:

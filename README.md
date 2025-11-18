@@ -5,7 +5,7 @@
 ```json
 {
   "context_servers": {
-    "local-mcp": {
+    "mcp-local-server": {
       "enabled": true,
       "source": "custom",
       "command": "uv",
@@ -22,7 +22,7 @@
 ```json
 {
   "context_servers": {
-    "local-mcp": {
+    "mcp-local-server": {
       "enabled": true,
       "source": "custom",
       "command": "/bin/bash",
@@ -38,7 +38,7 @@
 ```json
 {
   "mcpServers": {
-    "local-mcp": {
+    "mcp-local-server": {
       "command": "/home/f/Dev/MCPs/mcp-local-server/run.sh",
       "args": [],
       "env": {}

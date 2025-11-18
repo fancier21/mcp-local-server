@@ -3,7 +3,7 @@
 # import httpx
 from mcp.server.fastmcp import FastMCP
 
-mcp = FastMCP("local-mcp")
+mcp = FastMCP("mcp-local-server")
 
 
 @mcp.tool()
